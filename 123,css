@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div class="w3-container">
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="images/model t touring.jpg"width:65%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Ford Model T Touring
+  </div>
+</div>
+</div class="w3-display-container mySlides">
+<img src="images/benz velo.jpg" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+  Benz Velo (1894)
+</div>
+</div>
+<div class="w3-display-container mySlides">
+    <img src="images/model t touring.jpg" style="width:100%">
+    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+      Ford Model T Touring (1909)   
+    </div>
+</div>     
+<div class="w3-display-container mySlides">
+  <img src="images/Hispano-suiza-k6.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Hispano-Suiza-K6 (1935)
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/fiat 500 topolino.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Fiat 500 Topolino (1936)
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/bugatti 57.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Bugatti Type 57 C (1938)
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/300sl.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Mercedes-Benz 300SL Coupe 1955
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+    <img src="images/Toyota 20000gt.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+      Toyota 2000GT 1967
+    </div>
+  </div>
+  <div class="w3-display-container mySlides">
+    <img src="images/toyota 7 turbo.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+      Toyota 7 Turbo (1970)
+    </div>
+  </div>
+  <div class="w3-display-container mySlides">
+    <img src="images/audi ur quattro.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+      Audi Ur-quattro (1981)
+  <div class="w3-display-container mySlides">
+    <img src="images/gtr r32.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+      Nissan Skyline GT-R BNR32 (1989)
+    </div>
+</div>
+<div class="w3-display-container mySlides">
+    <img src="images/honda nsx na1.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+        Honda NSX NA1 (1991)
+    </div>
+</div>
+<div class="w3-display-container mySlides">
+    <img src="images/lexus lfa.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+        Lexus LFA Prototype (2009)
+    </div>
+</div>
+<div class="w3-display-container mySlides">
+    <img src="images/toyota mirai 2014.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+        Toyota Mirai (2014)
+    </div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
